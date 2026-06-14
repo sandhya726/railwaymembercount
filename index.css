@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body{
     background-image: url("railway.JPG");
@@ -36,4 +37,39 @@ button{
 #save-btn
 {
     background-color: green;
+=======
+
+body{
+    background-image: url("station.jpeg");
+    text-align: center;
+    font-weight: bold;
+}
+h1{
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+button{
+    border:0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:white;
+    font-size: bold;
+    width:200px;
+    margin-bottom: 5px;
+    border-radius:5px ;
+}
+#incremnet-id
+{
+    background-color:darkred;
+}
+#save-btn
+{
+    background-color: green;
+>>>>>>> 18d82ad11fcf414295930807ab00b1e11f06eada
 }

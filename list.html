@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>
+<shopping list>
+</title>
+</head>
+<body>
+<h1>MY SHOPPING LIST</H1>
+<ul id="list" type="circle">
+<li>divya</li>
+<li>sandhya</li>
+<li>ramesh</li>
+</ul>
+<input type="text" id="item">
+<input type="button" value="add" onclick="addingitem()">
+<script>
+function addingitem()
+{
+var nitem=document.getElementById("item").value.trim();
+if(nitem ==="")
+{
+alert(" enter an item");
+return;
+}
+var listitem=document.getElementById("list");
+var li=listitem.getElementsByTagName("li");
+for(var j=0;j<li.length;j++)
+
+{
+let tex=li[j].firstChild.nodeValue.trim();
+if(tex.toLowerCase()===nitem.toLowerCase())
+{
+alert("the item already exists in the list");
+return;
+}
+}
+var lin=document.createElement("li");
+lin.innerText=nitem+ " ";
+var btn=document.createElement("button");
+btn.innerText="X";
+btn.onclick=function(){
+lin.remove();
+};
+lin.appendChild(btn);
+listitem.appendChild(lin);
+document.getElementById("item").value="";
+}
+window.onload=function()
+{
+var listitem=document.getElementById("list");
+var listi=listitem.getElementsByTagName("li");
+for(var j=0;j<listi.length;j++)
+{
+let btn = document.createElement("button");
+        btn.innerText = " X";
+
+        btn.onclick = function () {
+            let li=this.parentElement;
+            li.remove();
+        };
+listi[j].appendChild(btn);
+}
+};
+</script>
+</body>
+</html>
