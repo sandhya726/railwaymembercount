@@ -1,4 +1,5 @@
 let countEL=document.getElementById("count-el")
+let saveEL=document.getElementById("save-el")
 let count=0;
 function increment()
 {
@@ -8,5 +9,7 @@ function increment()
 }
 function save()
 {
-    console.log(count);
+  saveEL.innerText+=" "+count+" - "
+  countEL.innerText=0
+  count=0
 }
