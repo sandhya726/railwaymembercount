@@ -38,3 +38,9 @@ button{
 {
     background-color: green;
 }
+p
+{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
