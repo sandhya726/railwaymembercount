@@ -1,5 +1,4 @@
 
-
 body{
     background-image: url("railway.jpg");
     background-size: cover;
@@ -8,17 +7,27 @@ body{
     text-align: center;
     font-weight: bold;
 }
+.container
+{
+    border: 2px solid black;
+    background-color: white;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 10px;
+}
 h1{
     text-align:center;
     margin-top: 10px;
     margin-bottom: 10px;
-   color: white;
+   
 }
 h2{
     margin-top: 0px;
     margin-bottom: 20px;
     font-size: 50px;
-    color: white;
+   
 }
 button{
     border:0px;
@@ -40,7 +49,7 @@ button{
 }
 p
 {
-    color: white;
+    
     font-size: 20px;
     font-weight: bold;
 }

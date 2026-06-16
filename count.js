@@ -4,13 +4,13 @@ let count=0
 function increment()
 {
     count=count+1
-    countEL.innerText=count
+    countEL.textContent=count
 
 }
 function save()
 {
-  saveEL.innerText+=" "+count+" - "
-  count=0;
-  countEL.innerText=count;
-  
+ let countstr=count+" - "
+  saveEL.textContent+=countstr
+  count=0
+  countEL.textContent=0
 }
